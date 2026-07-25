@@ -1,0 +1,27 @@
+# IGS Daily Monitor — Python dependencies (Windows / CPython 3.11)
+#
+# pandas is pinned to 1.5.3 because the legacy producer still relies on
+# DataFrame.append (removed in pandas 2.x); numpy is held <2 to stay ABI
+# compatible with that pandas and the SQLAlchemy 1.4.x line.
+
+# Core (offline/sample export + payload assembly)
+pandas==1.5.3
+numpy<2
+python-dateutil
+pytz
+
+# Live data sources (SQL Server / PostgreSQL / REST). The ODBC system driver
+# ("ODBC Driver 18 for SQL Server") must be installed separately on Windows.
+sqlalchemy>=1.4,<2
+pyodbc
+psycopg2-binary
+pymysql
+requests
+beautifulsoup4
+lxml
+matplotlib
+openpyxl
+xlrd
+
+# Tests
+pytest
