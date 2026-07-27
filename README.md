@@ -5,6 +5,8 @@ producer reads the desk's live pipeline sources every 30 minutes and renders
 slippage, risk alerts, z-scores, stop-loss watch, price/cost drift and exposure
 as a single calm view.
 
+**Live demo (sample data):** [igs-daily-monitor.vercel.app](https://igs-daily-monitor.vercel.app)
+
 ![python](https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white)
 ![react](https://img.shields.io/badge/react-19-149ECA?logo=react&logoColor=white)
 ![vite](https://img.shields.io/badge/vite-8-646CFF?logo=vite&logoColor=white)
